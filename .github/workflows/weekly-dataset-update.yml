@@ -1,0 +1,67 @@
+# 每周一 HKT 10:00（UTC 02:00）對資源庫快照
+name: Weekly dataset update
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Snapshot bundle + changelog stub
+        run: |
+          python3 - <<'PY'
+          import json
+          from datetime import date
+          from pathlib import Path
+          today = date.today().isoformat()
+          root = Path("data")
+          bundle = json.loads((root / "bundle.json").read_text(encoding="utf-8"))
+          notes = json.loads((root / "rider-notes.json").read_text(encoding="utf-8"))
+          snap_dir = root / "snapshots"
+          change_dir = root / "changelog"
+          snap_dir.mkdir(exist_ok=True)
+          change_dir.mkdir(exist_ok=True)
+          snap = {
+            "capturedAt": today,
+            "merchants": bundle.get("merchants", []),
+            "residences": bundle.get("residences", []),
+            "riderNotesCount": len(notes.get("notes", [])),
+          }
+          (snap_dir / f"snapshot_{today}.json").write_text(
+              json.dumps(snap, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+          # Compare with previous snapshot if exists
+          prevs = sorted(snap_dir.glob("snapshot_*.json"))
+          changes = []
+          if len(prevs) >= 2:
+              prev = json.loads(prevs[-2].read_text(encoding="utf-8"))
+              old_ids = {m["id"] for m in prev.get("merchants", [])}
+              new_ids = {m["id"] for m in snap["merchants"]}
+              for mid in sorted(new_ids - old_ids):
+                  changes.append({"type": "merchant_new", "id": mid})
+              for mid in sorted(old_ids - new_ids):
+                  changes.append({"type": "merchant_closed", "id": mid})
+          changelog = {"weekOf": today, "changeCount": len(changes), "changes": changes}
+          (change_dir / f"changelog_{today}.json").write_text(
+              json.dumps(changelog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+          print(changelog)
+          PY
+      - name: Commit snapshots
+        run: |
+          git config user.name "walker-dataset-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data || true
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore(data): weekly snapshot"
+            git push
+          fi

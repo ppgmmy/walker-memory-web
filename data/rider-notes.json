@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-09-17",
+  "notes": [
+    {
+      "id": "note_mu4yvyou_ybu9zq",
+      "kind": "residence",
+      "name": "置樂花園",
+      "tip": "近鄉事會路大閘入，A座電梯在左手",
+      "area": "置樂",
+      "transcript": "住址置樂花園，近鄉事會路大閘入",
+      "wasteMinutes": 9,
+      "createdAt": "2026-09-17T03:25:43.134Z",
+      "source": "rider"
+    }
+  ]
+}

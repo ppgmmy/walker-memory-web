@@ -1,0 +1,515 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-09-17",
+  "merchants": [
+    {
+      "id": "m_tm_plaza_mcd",
+      "kind": "merchant",
+      "name": "麥當勞 屯門市廣場",
+      "nameAliases": [
+        "McDonald's 屯門市廣場",
+        "市廣場麥當勞"
+      ],
+      "district": "屯門",
+      "area": "屯門市中心",
+      "address": "新界屯門屯門鄉事會路 1 號屯門市廣場",
+      "entranceTip": "入市廣場後睇樓層指示搵快餐區；記低實際樓層同近邊間大舖",
+      "floorTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_plaza_kfc",
+      "kind": "merchant",
+      "name": "KFC 屯門市廣場",
+      "nameAliases": [
+        "肯德基 屯門市廣場"
+      ],
+      "district": "屯門",
+      "area": "屯門市中心",
+      "address": "新界屯門屯門鄉事會路 1 號屯門市廣場",
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_town_cafe_de_coral",
+      "kind": "merchant",
+      "name": "大家樂 屯門市廣場",
+      "nameAliases": [
+        "Cafe de Coral 屯門市廣場"
+      ],
+      "district": "屯門",
+      "area": "屯門市中心",
+      "address": "新界屯門屯門鄉事會路 1 號屯門市廣場",
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_v_city_mcd",
+      "kind": "merchant",
+      "name": "麥當勞 V City",
+      "nameAliases": [
+        "McDonald's V City",
+        "VCity麥當勞"
+      ],
+      "district": "屯門",
+      "area": "屯門站",
+      "address": "新界屯門杯渡路 83 號 V City",
+      "entranceTip": "由屯門站／V City 商場入口入；記低樓層同舖號",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_tmt_plaza_yoshinoya",
+      "kind": "merchant",
+      "name": "吉野家 屯門市廣場",
+      "nameAliases": [
+        "Yoshinoya 屯門市廣場"
+      ],
+      "district": "屯門",
+      "area": "屯門市中心",
+      "address": "新界屯門屯門鄉事會路 1 號屯門市廣場",
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_san_hui_maxim",
+      "kind": "merchant",
+      "name": "美心 MX 屯門",
+      "nameAliases": [
+        "Maxim's MX 屯門"
+      ],
+      "district": "屯門",
+      "area": "屯門市中心",
+      "address": "新界屯門",
+      "entranceTip": "確認係邊個商場分店（市廣場／V City 等）再補入口",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_lung_mun_oasis",
+      "kind": "merchant",
+      "name": "龍門居商場食肆帶",
+      "nameAliases": [
+        "龍門居"
+      ],
+      "district": "屯門",
+      "area": "龍門",
+      "address": "新界屯門龍門路龍門居",
+      "entranceTip": "商場地舖為主；第一次記清楚近邊座住宅",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_sui_wo_court_shops",
+      "kind": "merchant",
+      "name": "兆康苑商場一帶",
+      "nameAliases": [
+        "兆康苑"
+      ],
+      "district": "屯門",
+      "area": "兆康",
+      "address": "新界屯門兆康苑",
+      "entranceTip": "輕鐵兆康站附近；商場同屋苑通道分開記",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_prime_view",
+      "kind": "merchant",
+      "name": "新墟／啟豐園一帶食肆",
+      "nameAliases": [
+        "屯門新墟"
+      ],
+      "district": "屯門",
+      "area": "新墟",
+      "address": "新界屯門新墟",
+      "entranceTip": "街舖門牌亂；記顏色招牌同對住邊條街",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "m_tm_sam_shing",
+      "kind": "merchant",
+      "name": "三聖商場一帶",
+      "nameAliases": [
+        "三聖"
+      ],
+      "district": "屯門",
+      "area": "三聖",
+      "address": "新界屯門三聖",
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    }
+  ],
+  "residences": [
+    {
+      "id": "r_tm_chile",
+      "kind": "residence",
+      "name": "置樂花園",
+      "nameAliases": [
+        "Chi Lok Fa Yuen",
+        "置樂"
+      ],
+      "district": "屯門",
+      "area": "置樂",
+      "address": "新界屯門置樂花園",
+      "blocks": [
+        "A座",
+        "B座",
+        "C座",
+        "D座",
+        "E座",
+        "F座"
+      ],
+      "entranceTip": "確認用邊個大閘（近屯門鄉事會路／其他閘）；入閘後先對座數字母再搵電梯",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_sanhui",
+      "kind": "residence",
+      "name": "新墟一帶住宅",
+      "nameAliases": [
+        "屯門新墟"
+      ],
+      "district": "屯門",
+      "area": "新墟",
+      "address": "新界屯門新墟",
+      "blocks": [],
+      "entranceTip": "舊式單棟／唐樓多；門牌同街名要對清楚，夜晚要放大門牌",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_on_ting",
+      "kind": "residence",
+      "name": "安定邨",
+      "nameAliases": [
+        "On Ting Estate"
+      ],
+      "district": "屯門",
+      "area": "安定",
+      "address": "新界屯門安定邨",
+      "blocks": [],
+      "entranceTip": "跟行人指示牌對座名；唔好跟車路 GPS",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_yau_oi",
+      "kind": "residence",
+      "name": "友愛邨",
+      "nameAliases": [
+        "Yau Oi Estate"
+      ],
+      "district": "屯門",
+      "area": "友愛",
+      "address": "新界屯門友愛邨",
+      "blocks": [],
+      "entranceTip": "座數分散；先睇訂單座名再揀最近有蓋通道",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_tai_hing",
+      "kind": "residence",
+      "name": "大興邨",
+      "nameAliases": [
+        "Tai Hing Estate"
+      ],
+      "district": "屯門",
+      "area": "大興",
+      "address": "新界屯門大興邨",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_shan_king",
+      "kind": "residence",
+      "name": "山景邨",
+      "nameAliases": [
+        "Shan King Estate"
+      ],
+      "district": "屯門",
+      "area": "山景",
+      "address": "新界屯門山景邨",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_butterfly",
+      "kind": "residence",
+      "name": "蝴蝶邨",
+      "nameAliases": [
+        "Butterfly Estate"
+      ],
+      "district": "屯門",
+      "area": "蝴蝶",
+      "address": "新界屯門蝴蝶邨",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_wu_king",
+      "kind": "residence",
+      "name": "湖景邨",
+      "nameAliases": [
+        "Wu King Estate"
+      ],
+      "district": "屯門",
+      "area": "湖景",
+      "address": "新界屯門湖景邨",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_leung_king",
+      "kind": "residence",
+      "name": "良景邨",
+      "nameAliases": [
+        "Leung King Estate"
+      ],
+      "district": "屯門",
+      "area": "良景",
+      "address": "新界屯門良景邨",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_tin_king",
+      "kind": "residence",
+      "name": "田景邨",
+      "nameAliases": [
+        "Tin King Estate"
+      ],
+      "district": "屯門",
+      "area": "田景",
+      "address": "新界屯門田景邨",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_kin_sang",
+      "kind": "residence",
+      "name": "建生邨",
+      "nameAliases": [
+        "Kin Sang Estate"
+      ],
+      "district": "屯門",
+      "area": "建生",
+      "address": "新界屯門建生邨",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_siu_hong",
+      "kind": "residence",
+      "name": "兆康苑",
+      "nameAliases": [
+        "Siu Hong Court"
+      ],
+      "district": "屯門",
+      "area": "兆康",
+      "address": "新界屯門兆康苑",
+      "blocks": [],
+      "entranceTip": "居屋苑；確認座名同最近輕鐵／商場入口",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_lung_mun",
+      "kind": "residence",
+      "name": "龍門居",
+      "nameAliases": [
+        "Lung Mun Oasis"
+      ],
+      "district": "屯門",
+      "area": "龍門",
+      "address": "新界屯門龍門路龍門居",
+      "blocks": [],
+      "entranceTip": "私人屋苑要跟訪客閘／會所指示；備註有寫用邊個門就跟備註",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_nerine",
+      "kind": "residence",
+      "name": "卓爾居",
+      "nameAliases": [
+        "Nerine Cottage",
+        "Nerine Heights"
+      ],
+      "district": "屯門",
+      "area": "屯門市中心",
+      "address": "新界屯門",
+      "blocks": [],
+      "entranceTip": "確認正確英文／中文名同座數；私人屋苑閘口為先",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_prime_view",
+      "kind": "residence",
+      "name": "啟豐園",
+      "nameAliases": [
+        "Prime View Garden"
+      ],
+      "district": "屯門",
+      "area": "新墟",
+      "address": "新界屯門啟豐園",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_sam_shing",
+      "kind": "residence",
+      "name": "三聖邨",
+      "nameAliases": [
+        "Sam Shing Estate"
+      ],
+      "district": "屯門",
+      "area": "三聖",
+      "address": "新界屯門三聖邨",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_tm_melody",
+      "kind": "residence",
+      "name": "悅湖山莊",
+      "nameAliases": [
+        "Melody Garden"
+      ],
+      "district": "屯門",
+      "area": "蝴蝶",
+      "address": "新界屯門悅湖山莊",
+      "blocks": [],
+      "entranceTip": "",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    },
+    {
+      "id": "r_db_discovery_bay",
+      "kind": "residence",
+      "name": "愉景灣",
+      "nameAliases": [
+        "Discovery Bay",
+        "DB"
+      ],
+      "district": "離島",
+      "area": "愉景灣",
+      "address": "新界大嶼山愉景灣",
+      "blocks": [],
+      "entranceTip": "離島社區；平台外賣覆蓋有限。若接單要預留船／交通同屋苑內巴士時間，唔建議當步兵主力區",
+      "status": "active",
+      "source": "seed",
+      "visits": 0,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17"
+    }
+  ]
+}
