@@ -12,6 +12,16 @@
       "wasteMinutes": 9,
       "createdAt": "2026-09-17T03:25:43.134Z",
       "source": "rider"
+    },
+    {
+      "id": "note_mu5622io_naxir6",
+      "kind": "residence",
+      "name": "置樂花園",
+      "tip": "近鄉事會路大閘入，A座電梯在左手（線上驗證）",
+      "area": "置樂",
+      "wasteMinutes": 9,
+      "createdAt": "2026-09-17T06:46:25.345Z",
+      "source": "rider"
     }
   ]
 }
