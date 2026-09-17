@@ -49,7 +49,7 @@ export default function HomePage() {
   const [transcript, setTranscript] = useState("");
   const [listening, setListening] = useState(false);
   const [saveMsg, setSaveMsg] = useState("");
-  const recogRef = useRef<SpeechRecognition | null>(null);
+  const recogRef = useRef<{ start: () => void; stop: () => void } | null>(null);
 
   const selected = hits[0]?.item;
 
@@ -91,20 +91,33 @@ export default function HomePage() {
   }
 
   function ensureRecog() {
-    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const w = window as Window & {
+      SpeechRecognition?: new () => SpeechRec;
+      webkitSpeechRecognition?: new () => SpeechRec;
+    };
+    type SpeechRec = {
+      lang: string;
+      continuous: boolean;
+      interimResults: boolean;
+      start: () => void;
+      stop: () => void;
+      onresult: ((event: { results: ArrayLike<ArrayLike<{ transcript: string }> & { isFinal?: boolean }> }) => void) | null;
+      onerror: (() => void) | null;
+      onend: (() => void) | null;
+    };
+    const SR = w.SpeechRecognition || w.webkitSpeechRecognition;
     if (!SR) return null;
     if (recogRef.current) return recogRef.current;
     const recog = new SR();
     recog.lang = "zh-HK";
     recog.continuous = false;
     recog.interimResults = true;
-    recog.onresult = (event: SpeechRecognitionEvent) => {
+    recog.onresult = (event) => {
       let text = "";
       for (let i = 0; i < event.results.length; i++) text += event.results[i][0].transcript;
       setTranscript(text.trim());
-      if (event.results[event.results.length - 1].isFinal) {
-        applyTranscript(text.trim());
-      }
+      const last = event.results[event.results.length - 1] as ArrayLike<{ transcript: string }> & { isFinal?: boolean };
+      if (last.isFinal) applyTranscript(text.trim());
     };
     recog.onerror = () => setListening(false);
     recog.onend = () => setListening(false);
